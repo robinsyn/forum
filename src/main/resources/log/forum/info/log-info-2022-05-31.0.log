@@ -1,0 +1,151 @@
+2022-05-31 15:59:42,459 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 8700 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-05-31 15:59:42,459 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-05-31 15:59:43,645 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-05-31 15:59:43,653 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-31 15:59:43,653 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-05-31 15:59:43,661 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 15:59:43,801 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-05-31 15:59:43,801 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1291 ms
+2022-05-31 15:59:44,373 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-31 15:59:44,524 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-31 15:59:44,540 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-05-31 15:59:44,556 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 2.92 seconds (JVM running for 4.464)
+2022-05-31 16:00:16,762 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 16:00:16,763 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-05-31 16:00:16,764 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-05-31 16:00:16,848 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 16:00:22,611 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 16:00:32,132 INFO [http-nio-8080-exec-4] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 16:01:11,811 INFO [http-nio-8080-exec-5] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 16:01:12,634 INFO [http-nio-8080-exec-5] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-05-31 17:44:20,240 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 8944 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-05-31 17:44:20,244 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-05-31 17:44:21,444 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-05-31 17:44:21,455 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-31 17:44:21,455 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-05-31 17:44:21,455 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 17:44:21,636 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-05-31 17:44:21,636 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1349 ms
+2022-05-31 17:44:22,224 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-31 17:44:22,486 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-31 17:44:22,516 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-05-31 17:44:22,539 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 3.087 seconds (JVM running for 7.346)
+2022-05-31 17:45:25,770 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 7904 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-05-31 17:45:25,770 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-05-31 17:45:27,187 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-05-31 17:45:27,197 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-31 17:45:27,197 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-05-31 17:45:27,197 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 17:45:27,366 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-05-31 17:45:27,366 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1520 ms
+2022-05-31 17:45:28,016 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-31 17:45:28,217 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-31 17:45:28,234 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-05-31 17:45:28,247 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 3.328 seconds (JVM running for 4.693)
+2022-05-31 17:45:42,491 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 17:45:42,491 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-05-31 17:45:42,493 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-05-31 17:45:42,529 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 17:45:43,385 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-05-31 17:47:48,806 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 7064 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-05-31 17:47:48,806 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-05-31 17:47:49,821 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-05-31 17:47:49,829 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-31 17:47:49,829 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-05-31 17:47:49,829 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 17:47:49,973 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-05-31 17:47:49,973 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1119 ms
+2022-05-31 17:47:50,504 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-31 17:47:50,656 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-31 17:47:50,672 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-05-31 17:47:50,680 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 2.481 seconds (JVM running for 3.691)
+2022-05-31 17:47:58,494 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 17:47:58,494 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-05-31 17:47:58,495 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 0 ms
+2022-05-31 17:47:58,527 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 17:47:59,320 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-05-31 17:50:11,047 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 3576 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-05-31 17:50:11,055 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-05-31 17:50:12,077 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-05-31 17:50:12,085 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-31 17:50:12,085 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-05-31 17:50:12,085 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 17:50:12,223 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-05-31 17:50:12,223 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1128 ms
+2022-05-31 17:50:12,743 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-31 17:50:12,887 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-31 17:50:12,903 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-05-31 17:50:12,919 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 2.578 seconds (JVM running for 3.923)
+2022-05-31 17:50:17,860 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 17:50:17,860 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-05-31 17:50:17,862 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-05-31 17:50:17,895 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 17:50:18,703 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-05-31 17:51:05,248 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 7596 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-05-31 17:51:05,248 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-05-31 17:51:06,642 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-05-31 17:51:06,671 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-31 17:51:06,672 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-05-31 17:51:06,673 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 17:51:06,822 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-05-31 17:51:06,822 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1526 ms
+2022-05-31 17:51:07,425 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-31 17:51:07,591 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-31 17:51:07,607 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-05-31 17:51:07,617 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 3.158 seconds (JVM running for 4.428)
+2022-05-31 17:51:28,146 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 17:51:28,146 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-05-31 17:51:28,147 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-05-31 17:51:28,188 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 17:51:29,003 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-05-31 19:10:02,769 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 1768 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-05-31 19:10:02,817 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-05-31 19:10:05,663 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-05-31 19:10:05,671 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-31 19:10:05,671 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-05-31 19:10:05,671 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 19:10:05,817 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-05-31 19:10:05,817 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 2920 ms
+2022-05-31 19:10:06,361 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-31 19:10:06,522 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-31 19:10:06,538 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-05-31 19:10:06,546 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 5.593 seconds (JVM running for 7.441)
+2022-05-31 19:10:16,174 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 19:10:16,174 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-05-31 19:10:16,175 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-05-31 19:10:16,214 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 19:10:16,967 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-05-31 19:16:58,793 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 3260 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-05-31 19:16:58,793 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-05-31 19:16:59,842 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-05-31 19:16:59,850 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-31 19:16:59,850 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-05-31 19:16:59,850 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 19:16:59,994 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-05-31 19:16:59,994 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1153 ms
+2022-05-31 19:17:00,657 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-31 19:17:00,825 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-31 19:17:00,841 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-05-31 19:17:00,857 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 2.651 seconds (JVM running for 3.938)
+2022-05-31 19:17:45,885 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 19:17:45,885 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-05-31 19:17:45,886 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-05-31 19:17:45,920 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 19:17:46,747 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-05-31 19:18:19,342 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 9668 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-05-31 19:18:19,342 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-05-31 19:18:20,577 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-05-31 19:18:20,585 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-05-31 19:18:20,585 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-05-31 19:18:20,585 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-05-31 19:18:20,721 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-05-31 19:18:20,721 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1331 ms
+2022-05-31 19:18:21,256 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-31 19:18:21,424 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-05-31 19:18:21,448 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-05-31 19:18:21,456 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 2.694 seconds (JVM running for 4.629)
+2022-05-31 19:18:30,482 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-31 19:18:30,483 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-05-31 19:18:30,484 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
+2022-05-31 19:18:30,516 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-05-31 19:18:31,306 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.

@@ -1,0 +1,2 @@
+2022-05-30 17:08:49,821 WARN [main] c.e.f.ForumApplicationTests [ForumApplicationTests.java:19] warn log
+2022-05-30 17:22:28,438 WARN [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use

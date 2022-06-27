@@ -1,0 +1,1436 @@
+2022-06-26 12:24:56,704 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:50] Starting ForumApplication on LAPTOP-UNCO2OSS with PID 6764 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-06-26 12:24:56,717 INFO [main] c.e.f.ForumApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2022-06-26 12:24:57,606 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-26 12:24:57,609 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-06-26 12:24:57,679 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 65ms. Found 1 repository interfaces.
+2022-06-26 12:24:57,690 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-26 12:24:57,691 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-06-26 12:24:57,709 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:363] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.forum.mapper.elasticsearch.DiscussPostRepository.
+2022-06-26 12:24:57,709 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2022-06-26 12:24:58,088 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$cd6f4f14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-26 12:24:58,149 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f9bd3d91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-26 12:24:58,565 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2022-06-26 12:24:58,578 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-26 12:24:58,588 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-06-26 12:24:58,588 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-06-26 12:24:58,789 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-06-26 12:24:58,790 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 2031 ms
+2022-06-26 12:25:00,319 INFO [main] o.e.p.PluginsService [PluginsService.java:190] no modules loaded
+2022-06-26 12:25:00,320 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2022-06-26 12:25:00,320 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022-06-26 12:25:00,321 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022-06-26 12:25:00,321 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2022-06-26 12:25:00,321 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022-06-26 12:25:02,173 INFO [main] o.s.d.e.c.TransportClientFactoryBean [TransportClientFactoryBean.java:88] Adding transport node : 127.0.0.1:9300
+2022-06-26 12:25:04,110 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-26 12:25:04,235 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2022-06-26 12:25:05,831 INFO [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:87] 
+
+Using generated security password: 60362be8-bcf6-4038-a607-b3afe1bf0386
+
+2022-06-26 12:25:05,931 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: Ant [pattern='/resources/**'], []
+2022-06-26 12:25:05,995 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2419fe6f, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e2772a9, org.springframework.security.web.header.HeaderWriterFilter@1dfe5dd1, org.springframework.security.web.authentication.logout.LogoutFilter@708f7386, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fa18f87, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2739ecc0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78fb72cb, org.springframework.security.web.session.SessionManagementFilter@fceab5d, org.springframework.security.web.access.ExceptionTranslationFilter@74a5bef0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32e7b78d]
+2022-06-26 12:25:06,170 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = forum-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-26 12:25:06,238 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 12:25:06,239 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 12:25:06,373 INFO [main] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 12:25:06,391 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = forum-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-26 12:25:06,395 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 12:25:06,396 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 12:25:06,398 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:171] Initializing ExecutorService
+2022-06-26 12:25:06,408 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = forum-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-26 12:25:06,413 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 12:25:06,414 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 12:25:06,422 INFO [main] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 12:25:06,429 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 12:25:06,436 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = forum-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-26 12:25:06,440 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 12:25:06,441 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 12:25:06,441 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:171] Initializing ExecutorService
+2022-06-26 12:25:06,450 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-26 12:25:06,452 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:677] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Discovered group coordinator LAPTOP-UNCO2OSS:9092 (id: 2147483647 rack: null)
+2022-06-26 12:25:06,511 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:472] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Revoking previously assigned partitions []
+2022-06-26 12:25:06,511 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:375] partitions revoked: []
+2022-06-26 12:25:06,512 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:509] [Consumer clientId=consumer-2, groupId=forum-consumer-group] (Re-)joining group
+2022-06-26 12:25:06,535 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 12:25:06,536 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:677] [Consumer clientId=consumer-4, groupId=forum-consumer-group] Discovered group coordinator LAPTOP-UNCO2OSS:9092 (id: 2147483647 rack: null)
+2022-06-26 12:25:06,537 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:472] [Consumer clientId=consumer-4, groupId=forum-consumer-group] Revoking previously assigned partitions []
+2022-06-26 12:25:06,538 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:375] partitions revoked: []
+2022-06-26 12:25:06,538 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:509] [Consumer clientId=consumer-4, groupId=forum-consumer-group] (Re-)joining group
+2022-06-26 12:25:06,561 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-06-26 12:25:06,563 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:59] Started ForumApplication in 10.451 seconds (JVM running for 11.972)
+2022-06-26 12:25:06,660 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:473] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Successfully joined group with generation 23
+2022-06-26 12:25:06,662 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Setting newly assigned partitions [publish-0]
+2022-06-26 12:25:06,668 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:473] [Consumer clientId=consumer-4, groupId=forum-consumer-group] Successfully joined group with generation 23
+2022-06-26 12:25:06,668 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] [Consumer clientId=consumer-4, groupId=forum-consumer-group] Setting newly assigned partitions [comment-0, like-0, follow-0]
+2022-06-26 12:25:06,790 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:380] partitions assigned: [publish-0]
+2022-06-26 12:25:06,790 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:380] partitions assigned: [comment-0, like-0, follow-0]
+2022-06-26 12:25:10,087 INFO [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-26 12:25:10,088 INFO [http-nio-8080-exec-10] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2022-06-26 12:25:10,100 INFO [http-nio-8080-exec-10] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 11 ms
+2022-06-26 12:25:10,173 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-26 12:25:10,215 INFO [http-nio-8080-exec-10] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-06-26 12:25:10,529 INFO [http-nio-8080-exec-10] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-06-26 12:25:10,599 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-26 12:25:10,612 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:10,738 INFO [http-nio-8080-exec-10] i.l.c.EpollProvider [Netty4InternalESLogger.java:104] Starting without optional epoll library
+2022-06-26 12:25:10,741 INFO [http-nio-8080-exec-10] i.l.c.KqueueProvider [Netty4InternalESLogger.java:104] Starting without optional kqueue library
+2022-06-26 12:25:10,861 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:10,869 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:10,870 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:10,872 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:10,873 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:10,875 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:10,877 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:10,878 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:10,880 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:10,882 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:10,883 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:10,884 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:10,890 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:10,891 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:10,893 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:10,894 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:10,895 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:10,896 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:10,897 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:18,330 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.DiscussPostService.findDiscussDetail].
+2022-06-26 12:25:18,339 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:18,341 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:18,343 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:25:18,355 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:18,357 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:18,358 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:25:18,361 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 12:25:18,363 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:18,364 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:18,365 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:25:18,369 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 12:25:18,372 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:18,374 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:18,375 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:25:18,378 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 12:25:18,381 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:18,382 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:18,383 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:25:18,387 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 12:25:18,390 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:25:18,394 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:25:18,395 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:25:18,398 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:25:18],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 12:29:34,248 INFO [http-nio-8080-exec-4] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.login].
+2022-06-26 12:29:34,292 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 12:29:34,297 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,300 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 12:29:34,306 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-26 12:29:34,309 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-26 12:29:34,317 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,319 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:34,320 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,321 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:34,322 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,323 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:34,324 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,326 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:34,327 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,328 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:34,328 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,330 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:34,331 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,333 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:34,334 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,335 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:34,336 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,337 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:34,338 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:34,339 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:34,340 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 12:29:34,349 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:34],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 12:29:37,030 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 12:29:37,031 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:37,032 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 12:29:37,036 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.DiscussPostService.findDiscussDetail].
+2022-06-26 12:29:37,038 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:37,039 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:37,040 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 12:29:37,043 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:29:37,047 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:37,048 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:37,049 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 12:29:37,050 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:29:37,053 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:37,054 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:37,055 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 12:29:37,056 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:37,057 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:37,058 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 12:29:37,059 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 12:29:37,062 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:37,064 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:37,065 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 12:29:37,066 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:29:37,068 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 12:29:37,071 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:37,072 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:37,073 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 12:29:37,074 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:29:37,077 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 12:29:37,080 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:37,081 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:37,082 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 12:29:37,083 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:29:37,086 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 12:29:37,089 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:37,090 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:37,091 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 12:29:37,092 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 12:29:37,095 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 12:29:37,098 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 12:29:37,100 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:37],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 12:29:38,723 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:38],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 12:29:38,725 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:38],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:38,727 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:38],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 12:29:38,732 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:38],访问了[com.example.forum.service.MessageService.findConversationCount].
+2022-06-26 12:29:38,737 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:38],访问了[com.example.forum.service.MessageService.findConversation].
+2022-06-26 12:29:38,743 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:38],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 12:29:38,746 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:38],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 12:29:38,749 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:38],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 12:29:38,752 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:38],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 12:29:40,422 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 12:29:40,424 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,425 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 12:29:40,429 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-26 12:29:40,431 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-26 12:29:40,435 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,436 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:40,437 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,438 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:40,438 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,439 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:40,440 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,441 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:40,442 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,443 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:40,443 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,444 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:40,445 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,447 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:40,448 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,449 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:40,449 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,450 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:40,451 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:40,452 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:40,453 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 12:29:40,455 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:40],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 12:29:55,189 INFO [http-nio-8080-exec-2] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:55],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 12:29:55,191 INFO [http-nio-8080-exec-2] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:55],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:55,192 INFO [http-nio-8080-exec-2] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:55],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 12:29:55,198 INFO [http-nio-8080-exec-2] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:55],访问了[com.example.forum.service.DiscussPostService.addDiscussPort].
+2022-06-26 12:29:55,248 INFO [http-nio-8080-exec-2] o.a.k.c.p.ProducerConfig [AbstractConfig.java:279] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2022-06-26 12:29:55,266 INFO [http-nio-8080-exec-2] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 12:29:55,266 INFO [http-nio-8080-exec-2] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 12:29:55,274 INFO [kafka-producer-network-thread | producer-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 12:29:57,332 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 12:29:57,334 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,336 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 12:29:57,346 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-26 12:29:57,349 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-26 12:29:57,354 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,356 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:57,358 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,359 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:57,360 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,362 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:57,363 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,364 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:57,366 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,367 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:57,368 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,370 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:57,372 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,374 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:57,376 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,377 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:57,379 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,381 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:57,382 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 12:29:57,384 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 12:29:57,385 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 12:29:57,387 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 12:29:57],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:04:13,542 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:50] Starting ForumApplication on LAPTOP-UNCO2OSS with PID 1404 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-06-26 13:04:13,546 INFO [main] c.e.f.ForumApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2022-06-26 13:04:15,281 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-26 13:04:15,283 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-06-26 13:04:15,345 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 57ms. Found 1 repository interfaces.
+2022-06-26 13:04:15,355 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-26 13:04:15,356 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2022-06-26 13:04:15,373 INFO [main] o.s.d.r.c.RepositoryConfigurationExtensionSupport [RepositoryConfigurationExtensionSupport.java:363] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.forum.mapper.elasticsearch.DiscussPostRepository.
+2022-06-26 13:04:15,373 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2022-06-26 13:04:15,723 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$93c6ba8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-26 13:04:15,778 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c014a90b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-26 13:04:16,164 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:90] Tomcat initialized with port(s): 8080 (http)
+2022-06-26 13:04:16,178 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-26 13:04:16,188 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-06-26 13:04:16,188 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2022-06-26 13:04:16,379 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-06-26 13:04:16,380 INFO [main] o.s.w.c.ContextLoader [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 2797 ms
+2022-06-26 13:04:17,736 INFO [main] o.e.p.PluginsService [PluginsService.java:190] no modules loaded
+2022-06-26 13:04:17,736 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2022-06-26 13:04:17,736 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022-06-26 13:04:17,736 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022-06-26 13:04:17,736 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2022-06-26 13:04:17,736 INFO [main] o.e.p.PluginsService [PluginsService.java:193] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022-06-26 13:04:19,324 INFO [main] o.s.d.e.c.TransportClientFactoryBean [TransportClientFactoryBean.java:88] Adding transport node : 127.0.0.1:9300
+2022-06-26 13:04:21,119 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-26 13:04:21,241 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2022-06-26 13:04:22,212 INFO [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:87] 
+
+Using generated security password: b74a23cc-0f5a-4621-b122-edac16852eba
+
+2022-06-26 13:04:22,270 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: Ant [pattern='/resources/**'], []
+2022-06-26 13:04:22,322 INFO [main] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31fe0ce5, org.springframework.security.web.context.SecurityContextPersistenceFilter@bb6869a, org.springframework.security.web.header.HeaderWriterFilter@18ac4af6, org.springframework.security.web.authentication.logout.LogoutFilter@395eb363, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5eee3da9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27b490de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@178dc733, org.springframework.security.web.session.SessionManagementFilter@2375a976, org.springframework.security.web.access.ExceptionTranslationFilter@1592e540, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cbbfe29]
+2022-06-26 13:04:22,424 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = forum-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-26 13:04:22,473 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 13:04:22,474 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 13:04:22,584 INFO [main] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 13:04:22,594 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = forum-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-26 13:04:22,599 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 13:04:22,599 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 13:04:22,601 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:171] Initializing ExecutorService
+2022-06-26 13:04:22,607 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = forum-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-26 13:04:22,616 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 13:04:22,617 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 13:04:22,619 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 13:04:22,620 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:677] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Discovered group coordinator LAPTOP-UNCO2OSS:9092 (id: 2147483647 rack: null)
+2022-06-26 13:04:22,623 INFO [main] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 13:04:22,624 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:472] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Revoking previously assigned partitions []
+2022-06-26 13:04:22,624 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:375] partitions revoked: []
+2022-06-26 13:04:22,625 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:509] [Consumer clientId=consumer-2, groupId=forum-consumer-group] (Re-)joining group
+2022-06-26 13:04:22,631 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = forum-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-26 13:04:22,635 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 13:04:22,636 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 13:04:22,636 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:171] Initializing ExecutorService
+2022-06-26 13:04:22,637 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = forum-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-26 13:04:22,652 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 13:04:22,652 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 13:04:22,657 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 13:04:22,659 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:677] [Consumer clientId=consumer-4, groupId=forum-consumer-group] Discovered group coordinator LAPTOP-UNCO2OSS:9092 (id: 2147483647 rack: null)
+2022-06-26 13:04:22,660 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:472] [Consumer clientId=consumer-4, groupId=forum-consumer-group] Revoking previously assigned partitions []
+2022-06-26 13:04:22,661 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:375] partitions revoked: []
+2022-06-26 13:04:22,661 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:509] [Consumer clientId=consumer-4, groupId=forum-consumer-group] (Re-)joining group
+2022-06-26 13:04:22,661 INFO [main] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 13:04:22,665 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:473] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Successfully joined group with generation 25
+2022-06-26 13:04:22,668 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Setting newly assigned partitions [publish-0]
+2022-06-26 13:04:22,673 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:380] partitions assigned: [publish-0]
+2022-06-26 13:04:22,835 INFO [main] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:279] ConsumerConfig values: 
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = forum-consumer-group
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2022-06-26 13:04:22,838 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 13:04:22,839 INFO [main] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 13:04:22,839 INFO [main] o.s.s.c.ThreadPoolTaskScheduler [ExecutorConfigurationSupport.java:171] Initializing ExecutorService
+2022-06-26 13:04:22,845 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 13:04:22,848 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-26 13:04:22,849 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:677] [Consumer clientId=consumer-6, groupId=forum-consumer-group] Discovered group coordinator LAPTOP-UNCO2OSS:9092 (id: 2147483647 rack: null)
+2022-06-26 13:04:22,850 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:472] [Consumer clientId=consumer-6, groupId=forum-consumer-group] Revoking previously assigned partitions []
+2022-06-26 13:04:22,850 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:375] partitions revoked: []
+2022-06-26 13:04:22,851 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:509] [Consumer clientId=consumer-6, groupId=forum-consumer-group] (Re-)joining group
+2022-06-26 13:04:22,866 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:204] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-06-26 13:04:22,869 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:59] Started ForumApplication in 10.689 seconds (JVM running for 14.849)
+2022-06-26 13:04:25,669 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:855] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Attempt to heartbeat failed since group is rebalancing
+2022-06-26 13:04:25,672 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:472] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Revoking previously assigned partitions [publish-0]
+2022-06-26 13:04:25,673 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:375] partitions revoked: [publish-0]
+2022-06-26 13:04:25,673 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:509] [Consumer clientId=consumer-2, groupId=forum-consumer-group] (Re-)joining group
+2022-06-26 13:04:25,934 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:473] [Consumer clientId=consumer-6, groupId=forum-consumer-group] Successfully joined group with generation 26
+2022-06-26 13:04:25,934 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] [Consumer clientId=consumer-6, groupId=forum-consumer-group] Setting newly assigned partitions [delete-0]
+2022-06-26 13:04:25,935 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:473] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Successfully joined group with generation 26
+2022-06-26 13:04:25,935 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] [Consumer clientId=consumer-2, groupId=forum-consumer-group] Setting newly assigned partitions [publish-0]
+2022-06-26 13:04:25,937 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.AbstractCoordinator [AbstractCoordinator.java:473] [Consumer clientId=consumer-4, groupId=forum-consumer-group] Successfully joined group with generation 26
+2022-06-26 13:04:25,938 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:280] [Consumer clientId=consumer-4, groupId=forum-consumer-group] Setting newly assigned partitions [comment-0, like-0, follow-0]
+2022-06-26 13:04:25,961 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.a.k.c.c.i.Fetcher [Fetcher.java:601] [Consumer clientId=consumer-6, groupId=forum-consumer-group] Resetting offset for partition delete-0 to offset 0.
+2022-06-26 13:04:25,962 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:380] partitions assigned: [delete-0]
+2022-06-26 13:04:26,046 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:380] partitions assigned: [publish-0]
+2022-06-26 13:04:26,046 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [AbstractMessageListenerContainer.java:380] partitions assigned: [comment-0, like-0, follow-0]
+2022-06-26 13:04:37,244 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-26 13:04:37,245 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:524] Initializing Servlet 'dispatcherServlet'
+2022-06-26 13:04:37,257 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:546] Completed initialization in 12 ms
+2022-06-26 13:04:37,304 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:04:37,420 INFO [http-nio-8080-exec-1] i.l.c.EpollProvider [Netty4InternalESLogger.java:104] Starting without optional epoll library
+2022-06-26 13:04:37,422 INFO [http-nio-8080-exec-1] i.l.c.KqueueProvider [Netty4InternalESLogger.java:104] Starting without optional kqueue library
+2022-06-26 13:04:37,524 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,528 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:04:37,543 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-06-26 13:04:37,793 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-06-26 13:04:37,874 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-26 13:04:37,898 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-26 13:04:37,906 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,908 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:37,914 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,916 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:37,917 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,918 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:37,919 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,920 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:37,921 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,922 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:37,924 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,925 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:37,926 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,927 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:37,929 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,930 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:37,932 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,933 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:37,935 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:37,936 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:37,941 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:04:37,949 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:37],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:04:40,325 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:04:40,327 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:40,330 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:04:40,347 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.DiscussPostService.findDiscussDetail].
+2022-06-26 13:04:40,350 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:40,352 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:40,353 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:04:40,361 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:04:40,369 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:40,373 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:40,374 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:04:40,375 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:04:40,380 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:40,383 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:40,384 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:04:40,385 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:40,387 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:40,388 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:04:40,389 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:04:40,392 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:40,394 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:40,395 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:04:40,397 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:04:40,399 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:04:40,402 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:40,403 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:40,405 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:04:40,406 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:04:40,409 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:04:40,413 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:40,414 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:40,415 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:04:40,416 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:04:40,419 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:04:40,423 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:40,425 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:04:40,426 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:04:40,427 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:04:40,431 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:04:40,434 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:04:40,436 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:40],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:04:43,881 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:43],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:04:43,883 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:43],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:04:43,884 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:43],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:04:43,890 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:43],访问了[com.example.forum.service.UserService.logout].
+2022-06-26 13:04:43,911 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:43],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:04:43,914 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:43],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:04:43,929 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:43],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:04:44,046 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:04:44],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:00,533 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:00,548 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.login].
+2022-06-26 13:05:00,564 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:00,565 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,571 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:05:00,575 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-26 13:05:00,578 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-26 13:05:00,584 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,586 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:00,588 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,590 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:00,592 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,593 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:00,595 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,596 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:00,597 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,598 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:00,599 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,600 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:00,601 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,602 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:00,603 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,605 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:00,606 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,608 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:00,609 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:00,610 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:00,611 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:05:00,614 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:00],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:05:03,925 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:03,927 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:03,928 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:05:03,932 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.DiscussPostService.findDiscussDetail].
+2022-06-26 13:05:03,935 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:03,935 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:03,936 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:03,937 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:03,941 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:03,943 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:03,944 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:03,945 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:03,948 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:03,949 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:03,950 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:03,951 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:03,952 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:03,954 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:03,955 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:05:03,958 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:03,959 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:03,960 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:03,961 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:03,963 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:05:03,965 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:03,966 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:03,967 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:03,968 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:03,973 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:05:03,976 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:03,977 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:03,979 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:03,980 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:03,983 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:05:03,986 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:03,988 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:03,989 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:03,991 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:03,994 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:05:03,997 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:03],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:05:04,000 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:04],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:05:15,363 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:15,364 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,365 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:05:15,371 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-26 13:05:15,373 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-26 13:05:15,378 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,379 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:15,380 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,381 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:15,382 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,384 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:15,386 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,387 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:15,388 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,389 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:15,390 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,391 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:15,392 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,393 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:15,394 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,395 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:15,396 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,397 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:15,398 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:15,399 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:15,401 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:05:15,404 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:15],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:05:16,771 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:16],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:16,773 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:16],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:16,774 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:16],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:05:16,777 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:16],访问了[com.example.forum.service.DiscussPostService.findDiscussDetail].
+2022-06-26 13:05:16,780 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:16],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:16,782 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:16],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:16,783 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:16],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:16,785 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:16],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:16,787 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:16],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:05:16,789 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:16],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:05:19,400 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:19],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:19,402 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:19],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:19,403 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:19],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:05:19,407 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:19],访问了[com.example.forum.service.DiscussPostService.updateDiscussType].
+2022-06-26 13:05:19,501 INFO [http-nio-8080-exec-6] o.a.k.c.p.ProducerConfig [AbstractConfig.java:279] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2022-06-26 13:05:19,519 INFO [http-nio-8080-exec-6] o.a.k.c.u.AppInfoParser [AppInfoParser.java:109] Kafka version : 2.0.1
+2022-06-26 13:05:19,519 INFO [http-nio-8080-exec-6] o.a.k.c.u.AppInfoParser [AppInfoParser.java:110] Kafka commitId : fa14705e51bd2ce5
+2022-06-26 13:05:19,527 INFO [kafka-producer-network-thread | producer-1] o.a.k.c.Metadata [Metadata.java:285] Cluster ID: icAoZ3E3TmiGaVsHUuoQbQ
+2022-06-26 13:05:21,029 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:21],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:21,031 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:21],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:21,033 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:21],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:05:21,036 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:21],访问了[com.example.forum.service.DiscussPostService.findDiscussDetail].
+2022-06-26 13:05:21,039 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:21],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:21,040 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:21],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:21,041 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:21],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:21,042 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:21],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:21,045 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:21],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:05:21,048 INFO [http-nio-8080-exec-7] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:21],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:05:22,887 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:22,889 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,890 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:05:22,893 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-26 13:05:22,896 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-26 13:05:22,901 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,902 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:22,903 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,904 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:22,905 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,906 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:22,907 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,908 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:22,909 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,909 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:22,910 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,911 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:22,912 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,913 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:22,914 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,916 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:22,917 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,918 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:22,919 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:22,920 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:22,921 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:05:22,923 INFO [http-nio-8080-exec-1] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:22],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:05:27,007 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:27,008 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:27,009 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:05:27,012 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.DiscussPostService.findDiscussDetail].
+2022-06-26 13:05:27,015 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:27,016 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:27,016 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:27,017 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:27,021 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:27,022 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:27,023 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:27,024 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:27,027 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:27,029 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:27,030 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:27,031 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:27,032 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:27,033 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:27,034 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:05:27,037 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:27,038 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:27,039 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:27,040 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:27,042 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:05:27,044 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:27,046 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:27,048 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:27,048 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:27,051 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:05:27,052 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:27,053 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:27,054 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:27,055 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:27,057 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:05:27,059 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:27,060 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:27,061 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.LikeService.findEntityLikeStatus].
+2022-06-26 13:05:27,062 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCommentByEntity].
+2022-06-26 13:05:27,065 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.CommentService.findCountByEntity].
+2022-06-26 13:05:27,068 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:05:27,070 INFO [http-nio-8080-exec-6] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:27],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].
+2022-06-26 13:05:28,604 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findTicket].
+2022-06-26 13:05:28,607 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,608 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.getAuthorities].
+2022-06-26 13:05:28,611 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-26 13:05:28,615 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-26 13:05:28,620 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,621 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:28,622 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,624 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:28,625 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,626 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:28,627 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,628 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:28,629 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,631 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:28,632 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,633 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:28,634 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,635 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:28,636 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,637 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:28,638 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,639 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:28,639 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-26 13:05:28,640 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-26 13:05:28,641 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.MessageService.findUnreadCount].
+2022-06-26 13:05:28,644 INFO [http-nio-8080-exec-10] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-26 13:05:28],访问了[com.example.forum.service.MessageService.findNoticeUnreadCount].

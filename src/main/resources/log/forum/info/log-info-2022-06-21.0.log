@@ -1,0 +1,82 @@
+2022-06-21 20:18:42,453 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 17992 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-06-21 20:18:42,464 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-06-21 20:18:43,967 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 20:18:43,974 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 20:18:44,011 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2022-06-21 20:18:44,971 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-06-21 20:18:44,984 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 20:18:44,986 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-06-21 20:18:44,987 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-21 20:18:45,269 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-06-21 20:18:45,269 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 2736 ms
+2022-06-21 20:18:46,757 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-06-21 20:18:47,174 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 20:18:47,195 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-06-21 20:18:47,207 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 6.068 seconds (JVM running for 9.004)
+2022-06-21 20:20:13,628 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 20:20:13,629 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-06-21 20:20:13,632 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2022-06-21 20:22:05,530 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:05],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-21 20:22:05,586 INFO [http-nio-8080-exec-5] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2022-06-21 20:22:06,663 INFO [http-nio-8080-exec-5] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2022-06-21 20:22:08,050 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:08],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-21 20:22:08,070 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:08],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:22:08,095 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:08],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:22:10,027 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:22:10,032 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:22:10,034 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:22:10,038 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:22:10,040 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:22:10,043 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:22:10,045 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:22:10,048 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:22:10,050 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:22:10,055 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:22:10,057 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:22:10,060 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:22:10,061 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:22:10,064 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:22:10,066 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:22:10,069 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:22:10,071 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:22:10,074 INFO [http-nio-8080-exec-5] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:22:10],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:24:39,589 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.DiscussPostService.findDiscussPostRows].
+2022-06-21 20:24:39,595 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.DiscussPostService.findDiscussPosts].
+2022-06-21 20:24:39,605 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:24:39,609 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:24:39,611 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:24:39,620 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:24:39,621 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:24:39,626 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:24:39,628 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:24:39,631 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:24:39,632 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:24:39,636 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:24:39,637 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:24:39,642 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:24:39,644 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:24:39,647 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:24:39,648 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:24:39,652 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:24:39,654 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:24:39,656 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:24:39,658 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.UserService.findUserById].
+2022-06-21 20:24:39,662 INFO [http-nio-8080-exec-3] c.e.f.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1],在[2022-06-21 20:24:39],访问了[com.example.forum.service.LikeService.findEntityLikeCount].
+2022-06-21 20:25:46,318 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:55] Starting ForumApplication using Java 1.8.0_301 on LAPTOP-UNCO2OSS with PID 9280 (F:\Tests\forum\target\classes started by Robin in F:\Tests\forum)
+2022-06-21 20:25:46,323 INFO [main] c.e.f.ForumApplication [SpringApplication.java:634] No active profile set, falling back to 1 default profile: "default"
+2022-06-21 20:25:47,211 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:262] Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-21 20:25:47,214 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:132] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-21 20:25:47,248 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:201] Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-06-21 20:25:48,033 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2022-06-21 20:25:48,043 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-06-21 20:25:48,044 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2022-06-21 20:25:48,045 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-21 20:25:48,227 INFO [main] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2022-06-21 20:25:48,227 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:292] Root WebApplicationContext: initialization completed in 1809 ms
+2022-06-21 20:25:49,495 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-06-21 20:25:49,936 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-06-21 20:25:49,957 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/forum'
+2022-06-21 20:25:49,975 INFO [main] c.e.f.ForumApplication [StartupInfoLogger.java:61] Started ForumApplication in 4.714 seconds (JVM running for 6.42)
+2022-06-21 20:25:53,456 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/forum] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-21 20:25:53,457 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2022-06-21 20:25:53,458 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
